@@ -221,7 +221,7 @@ export default function Index() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {features.map((f, i) => (
+            {features.map((f) => (
               <div
                 key={f.title}
                 className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2"
