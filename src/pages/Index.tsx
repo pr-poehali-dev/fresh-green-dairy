@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const LOGO_IMG = "https://cdn.poehali.dev/projects/ab62a4c8-7b1d-4375-9b8e-5f47433638b3/files/c47ad03f-8a3a-4ef6-b096-ad28456feb3b.jpg";
@@ -58,7 +58,6 @@ function FloatingOrb({ style }: { style: React.CSSProperties }) {
 }
 
 export default function Index() {
-  const heroRef = useRef<HTMLDivElement>(null);
   const [scrollY, setScrollY] = useState(0);
   const [visible, setVisible] = useState(false);
 
@@ -95,7 +94,6 @@ export default function Index() {
 
       {/* HERO */}
       <section
-        ref={heroRef}
         className="relative min-h-screen flex items-center pt-20 overflow-hidden"
         style={{ background: "linear-gradient(145deg, #f8fdf4 0%, #fff 50%, #fdfbf0 100%)" }}
       >
